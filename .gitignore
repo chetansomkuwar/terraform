@@ -1,6 +1,9 @@
 # Local .terraform directories
 **/.terraform/*
 
+# To hide sensitive data
+terraform.tfstate 
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
