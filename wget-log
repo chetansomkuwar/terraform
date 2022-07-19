@@ -1,0 +1,13 @@
+--2022-07-19 23:09:11--  https://apt.releases.hashicorp.com/gpg
+Resolving apt.releases.hashicorp.com (apt.releases.hashicorp.com)... 205.251.192.230, 205.251.194.155, 108.158.221.108, ...
+Connecting to apt.releases.hashicorp.com (apt.releases.hashicorp.com)|205.251.192.230|:443... failed: Connection timed out.
+Connecting to apt.releases.hashicorp.com (apt.releases.hashicorp.com)|205.251.194.155|:443... failed: Connection timed out.
+Connecting to apt.releases.hashicorp.com (apt.releases.hashicorp.com)|108.158.221.108|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3195 (3.1K) [binary/octet-stream]
+Saving to: ‘STDOUT’
+
+     0K                                                         0% 0.00 =0s
+
+
+Cannot write to ‘-’ (Success).
