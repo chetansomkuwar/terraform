@@ -22,12 +22,7 @@ resource "aws_iam_user" "adding_10_useres" {
 
 resource "aws_iam_group_membership" "adding_10_useres_into_group" {
   name = "demo"
-
-  users = [
-    aws_iam_user.user_one.name,
-    aws_iam_user.user_two.name,
-  ]
-
+  
   group = aws_iam_group.group.name
 }
 
