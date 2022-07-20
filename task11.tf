@@ -39,8 +39,11 @@ esource "aws_iam_group_membership" "adding_5_users_into_group" {
   name = "tf-testing-group-membership"
 
   users = [
-    aws_iam_user.user_one.name,
-    aws_iam_user.user_two.name,
+    aws_iam_user.user11.name,
+    aws_iam_user.user11.name,
+    aws_iam_user.user11.name,
+    aws_iam_user.user11.name,
+    aws_iam_user.user11.name,
   ]
 
   group = aws_iam_group.group.name
