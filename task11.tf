@@ -35,7 +35,7 @@ resource "aws_iam_group" "g2" {
 
 #add five users into group
 
-esource "aws_iam_group_membership" "adding_" {
+esource "aws_iam_group_membership" "adding_5_users_into_group" {
   name = "tf-testing-group-membership"
 
   users = [
