@@ -1,3 +1,5 @@
+# create S3 bucket
+
 resource "aws_s3_bucket" "B1" {
   bucket = "jarvisbuckk"
 
@@ -6,3 +8,4 @@ resource "aws_s3_bucket" "B1" {
     Environment = "Dev"
   }
 }
+
