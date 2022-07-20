@@ -20,7 +20,8 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
       type        = "AWS"
       identifiers = ["829912339674"]
     }
-{
+
+
     "Version": "2012-10-17",
     "Statement": [
         {
