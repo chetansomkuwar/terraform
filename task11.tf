@@ -35,7 +35,7 @@ resource "aws_iam_group" "g2" {
 
 #add five users into group
 
-esource "aws_iam_group_membership" "adding_5_users_into_group" {
+resource "aws_iam_group_membership" "adding_5_users_into_group111" {
   name = "tf-testing-group-membership"
 
   users = [
@@ -50,3 +50,17 @@ esource "aws_iam_group_membership" "adding_5_users_into_group" {
   group = aws_iam_group.group111.name
 }
 
+resource "aws_iam_group_membership" "adding_5_users_into_group222" {
+  name = "tf-testing-group-membership1"
+
+  users = [
+    aws_iam_user.user11.name,
+    aws_iam_user.user12.name,
+    aws_iam_user.user13.name,
+    aws_iam_user.user14.name,
+    aws_iam_user.user15.name,
+    aws_iam_user.user16.name,
+  ]
+
+  group = aws_iam_group.group222.name
+}
