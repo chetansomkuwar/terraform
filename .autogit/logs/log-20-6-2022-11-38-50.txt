@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+Wed Jul 20 2022 11:38:50 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* task_iam.tf
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
