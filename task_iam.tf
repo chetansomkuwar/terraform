@@ -31,14 +31,14 @@ resource "aws_iam_group_membership" "adding_10_users_into group" {
   group = aws_iam_group.demo.name
 }
 
-resource "aws_iam_group" "group" {
-  name = "test-group"
-}
+# resource "aws_iam_group" "group" {
+#   name = "test-group"
+# }
 
-resource "aws_iam_user" "user_one" {
-  name = "test-user"
-}
+# resource "aws_iam_user" "user_one" {
+#   name = "test-user"
+# }
 
-resource "aws_iam_user" "user_two" {
-  name = "test-user-two"
-}
+# resource "aws_iam_user" "user_two" {
+#   name = "test-user-two"
+# }
