@@ -14,6 +14,4 @@ resource "aws_iam_group" "group2" {
 
 resource "aws_iam_user" "adding 10 useres" {
   count = "${length(var.username)}"
-  name = "${element(var.username,count.index )
-  
-}
+  name = "${element(var.username,count.index )}"
