@@ -25,8 +25,15 @@ resource "aws_iam_user" "u6" {
 
 #create 2 groups
 
-# resource "aws_iam_group" "group1" {
-#   name = "demo"
-# }
+resource "aws_iam_group" "g1" {
+  name = "group111"
+}
+
+resource "aws_iam_group" "g2" {
+  name = "group222"
+}
+
+#add five users into group
+
 
 
