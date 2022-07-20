@@ -3,7 +3,7 @@
 resource "aws_instance" "practice" {
   ami           = "ami-0fb653ca2d3203ac1"
   instance_type = "t2.micro"
-# count = 5
+  # count = 5
   security_groups = ["security group using Terraform"]
 
   tags = {
