@@ -47,6 +47,6 @@ esource "aws_iam_group_membership" "adding_5_users_into_group" {
     aws_iam_user.user16.name,
   ]
 
-  group = aws_iam_group.group.name
+  group = aws_iam_group.group111.name
 }
 
