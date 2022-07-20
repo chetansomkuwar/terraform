@@ -21,8 +21,14 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
       identifiers = ["829912339674"]
     }
 
-    actions = [
-      "s3:ListStorageLensConfigurations",
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListStorageLensConfigurations",
                 "s3:ListAccessPointsForObjectLambda",
                 "s3:GetAccessPoint",
                 "s3:PutAccountPublicAccessBlock",
@@ -34,12 +40,18 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
                 "s3:PutStorageLensConfiguration",
                 "s3:ListMultiRegionAccessPoints",
                 "s3:CreateJob"
-      
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::avengers-1/2018-08-21.png",
+                "arn:aws:s3:::avengers-1/2022-03-13.png",
+                "arn:aws:s3:::avengers-1"
+            ]
+        }
     ]
-
-    resources = [
-      aws_s3_bucket.B1.arn,
-      "${aws_s3_bucket.B1.arn}/*",
-    ]
-  }
 }
