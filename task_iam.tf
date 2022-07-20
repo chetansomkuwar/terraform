@@ -20,8 +20,8 @@ resource "aws_iam_user" "adding_10_useres" {
 
 #adding user into group
 
-resource "aws_iam_group_membership" "demo" {
-  name = "tf-testing-group-membership"
+resource "aws_iam_group_membership" "team" {
+  name = "demo"
 
   users = [
     aws_iam_user.user_one.name,
