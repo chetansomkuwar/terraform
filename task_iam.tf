@@ -17,3 +17,6 @@ resource "aws_iam_user" "adding_10_useres" {
   name  = element(var.username, count.index)
 
 }
+
+#adding user into group
+
