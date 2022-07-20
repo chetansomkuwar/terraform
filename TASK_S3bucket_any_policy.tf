@@ -49,8 +49,7 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
             "Action": "s3:*",
             "Resource": [
                 "arn:aws:s3:::jarvisbuckk/ubuntt.txt",
-                "arn:aws:s3:::avengers-1/2022-03-13.png",
-                "arn:aws:s3:::avengers-1"
+                "arn:aws:s3:::jarvisbuckk/India_team (1).bkp",
             ]
         }
     ]
