@@ -23,3 +23,7 @@ resource "aws_iam_user" "u6" {
   name = "user16"
 }
 
+#create 2 groups
+
+
+
