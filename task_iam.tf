@@ -19,3 +19,5 @@ resource "aws_iam_user" "adding_10_useres" {
 }
 
 #adding user into group
+
+
