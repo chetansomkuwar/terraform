@@ -5,7 +5,7 @@ resource "aws_instance" "this" {
   instance_type = "t2.micro"
   # count = 5
   security_groups = ["default"]
-  key_name        = root
+  key_name        = "root"
 
   tags = {
     Name = "Terraform-instance"
