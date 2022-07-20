@@ -9,17 +9,6 @@ resource "aws_s3_bucket" "B1" {
   }
 }
 
-##################################################################################################
-
-resource "aws_s3_bucket" "B1" {
-  bucket = "jarvisbuckk"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
 resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
   bucket = aws_s3_bucket.B1.id
   policy = data.aws_iam_policy_document.allow_access_from_another_account.json
