@@ -47,7 +47,7 @@ resource "aws_iam_group_membership" "adding_5_users_into_group111" {
     aws_iam_user.u6.name,
   ]
 
-  group = aws_iam_group.group111.name
+  group = aws_iam_group.g1.name
 }
 
 resource "aws_iam_group_membership" "adding_5_users_into_group222" {
@@ -62,5 +62,5 @@ resource "aws_iam_group_membership" "adding_5_users_into_group222" {
     aws_iam_user.u6.name,
   ]
 
-  group = aws_iam_group.group222.name
+  group = aws_iam_group.g2.name
 }
