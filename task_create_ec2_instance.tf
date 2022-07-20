@@ -1,7 +1,7 @@
 # #terraform code to launch ec2 instance
 
 resource "aws_instance" "practice" {
-  ami           = "ami-0fb653ca2d3203ac1"
+  ami           = "ami-006d3995d3a6b963b"
   instance_type = "t2.micro"
   # count = 5
   security_groups = ["security group using Terraform"]
