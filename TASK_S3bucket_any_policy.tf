@@ -9,9 +9,15 @@ resource "aws_s3_bucket" "B1" {
   }
 }
 
+##################################################################################################
 
-resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "B1" {
+  bucket = "jarvisbuckk"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
 }
 
 resource "aws_s3_bucket_policy" "allow_access_from_another_account" {
