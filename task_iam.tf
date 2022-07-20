@@ -1,5 +1,6 @@
 # create 10 users, create demo & devil and add this 10 users in that group
 
+##
 resource "aws_iam_group" "group1" {
   name = "demo"
 }
