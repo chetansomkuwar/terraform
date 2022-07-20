@@ -24,7 +24,7 @@ resource "aws_iam_group_membership" "adding_10_users_into group" {
   name = "tf-testing-group-membership"
 
   users = [
-    aws_iam_user.user_one.name,
+    aws_iam_user.username.name,
     aws_iam_user.user_two.name,
   ]
 
