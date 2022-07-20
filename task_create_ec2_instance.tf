@@ -16,7 +16,7 @@
 resource "aws_security_group" "tf_sg" {
   name        = "security group using Terraform"
   description = "security group using Terraform"
-  vpc_id      = "vpc-08f53a580588af642"
+  vpc_id      = "vpc-04e0aaa0c661fd0ac"
 
   ingress {
     description      = "HTTPS"
