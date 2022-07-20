@@ -60,6 +60,11 @@
 # }
 
 # #create & attach key pair to the instance
-resource "aws_instance" "this" {
-  ami           = "ami-006d3995d3a6b963b"
+resource "aws_instance" "web" {
+  ami           = 
   instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
