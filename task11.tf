@@ -40,10 +40,11 @@ esource "aws_iam_group_membership" "adding_5_users_into_group" {
 
   users = [
     aws_iam_user.user11.name,
-    aws_iam_user.user11.name,
-    aws_iam_user.user11.name,
-    aws_iam_user.user11.name,
-    aws_iam_user.user11.name,
+    aws_iam_user.user12.name,
+    aws_iam_user.user13.name,
+    aws_iam_user.user14.name,
+    aws_iam_user.user15.name,
+    aws_iam_user.user16.name,
   ]
 
   group = aws_iam_group.group.name
