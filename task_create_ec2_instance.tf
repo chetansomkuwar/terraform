@@ -1,15 +1,15 @@
 # #terraform code to launch ec2 instance
 
-# resource "aws_instance" "practice" {
-#   ami           = "ami-006d3995d3a6b963b"
-#   instance_type = "t2.micro"
-#   # count = 5
-#   security_groups = ["security group using Terraform"]
+resource "aws_instance" "practice" {
+  ami           = "ami-006d3995d3a6b963b"
+  instance_type = "t2.micro"
+  # count = 5
+  security_groups = ["security group using Terraform"]
 
-#   tags = {
-#     Name = "Terraform-instance"
-#   }
-# }
+  tags = {
+    Name = "Terraform-instance"
+  }
+}
 
 #security group using Terraform
 
