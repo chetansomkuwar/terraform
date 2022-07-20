@@ -1,6 +1,6 @@
 # #terraform code to launch ec2 instance
 
-resource "aws_instance" "practice" {
+resource "aws_instance" "newone" {
   ami           = "ami-006d3995d3a6b963b"
   instance_type = "t2.micro"
   # count = 5
