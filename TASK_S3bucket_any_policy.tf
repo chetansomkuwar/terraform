@@ -21,7 +21,7 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
       identifiers = ["829912339674"]
     }
 
-
+   {
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -50,6 +50,7 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
             "Resource": [
                 "arn:aws:s3:::jarvisbuckk/ubuntt.txt",
                 "arn:aws:s3:::jarvisbuckk/India_team (1).bkp",
+
             ]
         }
     ]
