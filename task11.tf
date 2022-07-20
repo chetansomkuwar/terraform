@@ -2,7 +2,7 @@
 resource "aws_iam_user" "u1" {
   name = "user11"
 }
-5
+
 resource "aws_iam_user" "u2" {
   name = "user12"
 }
