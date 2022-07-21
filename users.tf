@@ -28,7 +28,7 @@
 
 resource "aws_iam_user" "reference4" {
   name = var.map_var.u2
-  # here u2 
+  # here u2 mention after the name & u2= find variable in variabl files.
   tags = {
     tag-key = "new-user3"
   }
