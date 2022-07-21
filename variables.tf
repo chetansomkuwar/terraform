@@ -23,7 +23,7 @@
 #### variable for list ##### --> call listing
 variable "list_var" {
   type    = list(any)
-  default = [s1, sa2, san3, sand4]
+  default = [shubham, pranay, atharv, sand4]
   #               0         1         2         3
   description = "variables details through list"
 }
