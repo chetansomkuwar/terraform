@@ -28,6 +28,7 @@
 
 resource "aws_iam_user" "reference4" {
   name = var.map_var.u2
+  # here u2 
   tags = {
     tag-key = "new-user3"
   }
