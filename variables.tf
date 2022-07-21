@@ -28,10 +28,10 @@
 #   description = "variables details through list"
 # }
 
-#### variable for  ##### --> call listing
-# variable "list_var" {
-#   type    = list(any)
-#   default = ["shubham", "pranay", "atharv", "akash"]
-#   #               0         1         2         3
-#   description = "variables details through list"
-# }
+### variable for  ##### --> call listing
+variable "list_var" {
+  type    = list(any)
+  default = ["shubham", "pranay", "atharv", "akash"]
+  #               0         1         2         3
+  description = "variables details through list"
+}
