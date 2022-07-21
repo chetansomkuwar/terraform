@@ -36,10 +36,12 @@
 
 #Note:- in map resource u2,u3,u1 call variable map
 
-resource "aws_iam_user" "reference2" {
-  name = var.any_var.u4.u3
-  tags = {
-    tag-key = "komal-giradkar"
-  }
-}
+# resource "aws_iam_user" "reference2" {
+#   name = var.any_var.u4.u3
+#   tags = {
+#     tag-key = "komal-giradkar"
+#   }
+# }
+
+#Note:- u4.u3 means 
 
