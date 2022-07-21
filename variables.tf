@@ -33,7 +33,10 @@ variable "map_var" {
   type    = map
   description = "variables details through map"
   default = {
-    
+
+      u1 = "user1"
+      u2 = "user2"
+      u3 = "user3" 
   }
   
 }
