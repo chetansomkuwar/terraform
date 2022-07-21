@@ -31,7 +31,9 @@
 ### variable for map  ##### 
 variable "map_var" {
   type    = map
-  default = ["shubham", "pranay", "atharv", "akash"]
-  #               0         1         2         3
-  description = "variables details through list"
+  description = "variables details through map"
+  default = {
+    
+  }
+  
 }
