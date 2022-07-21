@@ -1,23 +1,23 @@
-## create single ec2 instance
+# ## create single ec2 instance
 
-module "ec2_instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+# module "ec2_instance" {
+#   source  = "terraform-aws-modules/ec2-instance/aws"
+#   version = "~> 3.0"
 
-  name = "single-instance"
+#   name = "single-instance"
 
-  ami           = "ami-0cff7528ff583bf9a"
-  instance_type = "t2.micro"
-  #  key_name               = "root"
-  monitoring             = true
-  vpc_security_group_ids = ["sg-0a32e0d27189d1f22"]
-  subnet_id              = "subnet-072b5d54ff135b446"
+#   ami           = "ami-0cff7528ff583bf9a"
+#   instance_type = "t2.micro"
+#   #  key_name               = "root"
+#   monitoring             = true
+#   vpc_security_group_ids = ["sg-0a32e0d27189d1f22"]
+#   subnet_id              = "subnet-072b5d54ff135b446"
 
-  tags = {
-    Terraform   = "true"
-    Environment = "dev"
-  }
-}
+#   tags = {
+#     Terraform   = "true"
+#     Environment = "dev"
+#   }
+# }
 
 ## create new VPC
 module "vpc" {
@@ -34,7 +34,7 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = "dev"
   }
 }
