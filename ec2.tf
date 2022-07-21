@@ -20,20 +20,3 @@
 # }
 
 ## create new VPC
-module "vpc" {
-  source = "terraform-aws-modules/vpc/aws"
-
-  name = "jarvis-vpc"
-  cidr = "172.50.0.10/24"
-
-  azs             = ["eu-west-1a"]
-  private_subnets = ["128.0.0.0"]
-
-  enable_nat_gateway = true
-  enable_vpn_gateway = true
-
-  tags = {
-    Terraform   = "true"
-    Environment = "dev"
-  }
-}
