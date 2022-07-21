@@ -65,10 +65,7 @@
 #   description = "variables details through boolian"
 # }
 
-
-
-
-
+##############################################################3
 
 variable "boolian_var" {
   type        = bool
