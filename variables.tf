@@ -28,7 +28,7 @@
 #   description = "variables details through list"
 # }
 
-### variable for  ##### --> call listing
+### variable for map  ##### 
 variable "map_var" {
   type    = list(any)
   default = ["shubham", "pranay", "atharv", "akash"]
