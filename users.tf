@@ -8,8 +8,8 @@ resource "aws_iam_user" "reference1" {
 
 #Note:- this user calling name --> variable string --> string variable provide "sandesh"    
 
-resource "aws_iam_user" "reference1" {
-  name = var.string_var
+resource "aws_iam_user" "reference2" {
+  name = var.number_var
   tags = {
     tag-key = "new-user1"
   }
