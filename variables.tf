@@ -20,9 +20,9 @@ variable "number_var" {
   description = "variables details through number"
 }
 
-#### variable for list #####
-variable "number_var" {
-  type        = number
+#### variable for list ##### --> call listing
+variable "list_var" {
+  type        = list
   default     = "2"
   description = "variables details through number"
 }
