@@ -37,7 +37,7 @@
 #Note:- in map resource u2,u3,u1 call variable map
 
 resource "aws_iam_user" "reference2" {
-  name = var.any_var
+  name = var.any_var.u2[2]
   tags = {
     tag-key = "komal "
   }
