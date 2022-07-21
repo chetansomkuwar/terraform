@@ -46,7 +46,7 @@
 #Note:- u4.u3 means in "any variable" --> select "u4=map" --> choose rahul
 
 
-resource "aws_iam_user" "reference2" {
+resource "aws_iam_user" "reference6" {
   name = var.number_var
   tags = {
     tag-key = "new-user2"

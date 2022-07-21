@@ -56,3 +56,11 @@
 #   }
 #   description = "variables details through number"
 # }
+
+
+#### variable for boolian #####
+# variable "number_var" {
+#   type        = number
+#   default     = "2"
+#   description = "variables details through number"
+# }
