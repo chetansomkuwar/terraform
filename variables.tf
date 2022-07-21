@@ -9,5 +9,5 @@
 #### varibale for strings
 variable "string_var" {
   type        = string
-  description = "The id of the machine image (AMI) to use for the server."
+  description = "variables deta"
 }
