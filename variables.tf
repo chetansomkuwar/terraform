@@ -43,8 +43,8 @@
 
 #### variable for any ##### --> combination of all variables
 variable "any_var" {
-  type        = any
-  default     = {
+  type = any
+  default = {
     u1 = "sando"
     u2 = ["user111", "user222", "user333", "user444", "user555"]
     u3 = 6786
