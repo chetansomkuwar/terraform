@@ -8,17 +8,17 @@
 
 # #Note:- this user calling name --> variable string --> string variable provide "sandesh"    
 
-# resource "aws_iam_user" "reference2" {
-#   name = var.number_var
-#   tags = {
-#     tag-key = "new-user2"
-#   }
-# }
-
-
-
 resource "aws_iam_user" "reference2" {
-  name = var.list_var[2]
+  name = var.number_var
+  tags = {
+    tag-key = "new-user2"
+  }
+}
+
+
+
+resource "aws_iam_user" "reference3" {
+  name = var.list_var[3]
   tags = {
     tag-key = "new-user3"
   }
