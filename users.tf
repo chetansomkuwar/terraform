@@ -26,3 +26,9 @@
 
 #Note:- this resource calling --> list variable --> thier provided list of username
 
+resource "aws_iam_user" "reference3" {
+  name = var.list_var[3]
+  tags = {
+    tag-key = "new-user3"
+  }
+}
