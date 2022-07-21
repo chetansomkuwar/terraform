@@ -16,6 +16,6 @@ variable "string_var" {
 #### variable for number #####
 variable "number_var" {
   type        = number
-  default     = "sandesh"
+  default     = "sandesh_number"
   description = "variables details through number"
 }
