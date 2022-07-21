@@ -14,11 +14,11 @@
 # }
 
 #### variable for number #####
-variable "number_var" {
-  type        = number
-  default     = "2"
-  description = "variables details through number"
-}
+# variable "number_var" {
+#   type        = number
+#   default     = "2"
+#   description = "variables details through number"
+# }
 
 #### variable for list ##### --> call listing
 variable "list_var" {
