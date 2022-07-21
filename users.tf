@@ -15,7 +15,7 @@
 #   }
 # }
 
-#Note:- this resource calling number
+#Note:- this resource calling --> number variable --> thier provided no
 
 # resource "aws_iam_user" "reference3" {
 #   name = var.list_var[3]
