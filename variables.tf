@@ -30,7 +30,7 @@
 
 ### variable for map  ##### 
 variable "map_var" {
-  type    = list(any)
+  type    = map
   default = ["shubham", "pranay", "atharv", "akash"]
   #               0         1         2         3
   description = "variables details through list"
