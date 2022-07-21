@@ -20,7 +20,7 @@ variable "number_var" {
   description = "variables details through number"
 }
 
-#### variable for number #####
+#### variable for list #####
 variable "number_var" {
   type        = number
   default     = "2"
