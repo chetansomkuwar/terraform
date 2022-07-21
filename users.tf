@@ -33,3 +33,5 @@ resource "aws_iam_user" "reference4" {
     tag-key = "new-user3"
   }
 }
+
+#Note:- in map resource u2,u3,u1 call variable map
