@@ -24,4 +24,4 @@
 #   }
 # }
 
-#Note:- this resource calling --> number variable --> thier provided no
+#Note:- this resource calling --> list variable --> thier provided no
