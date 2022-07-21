@@ -13,4 +13,4 @@ variable "string_var" {
   description = "variables details"
 }
 
-#### variable for 
+#### variable for number #####
