@@ -24,6 +24,6 @@ variable "number_var" {
 variable "list_var" {
   type        = list
   default     = [sandesh1, sandesh2 ,sandesh3, sandesh4]
-    #
-  description = "variables details through number"
+    #               0         1         2         3
+  description = "variables details through list"
 }
