@@ -36,7 +36,7 @@
 
 #Note:- in map resource u2,u3,u1 call variable map
 
-# resource "aws_iam_user" "reference2" {
+# resource "aws_iam_user" "reference5" {
 #   name = var.any_var.u4.u3
 #   tags = {
 #     tag-key = "komal-giradkar"
@@ -46,3 +46,9 @@
 #Note:- u4.u3 means in "any variable" --> select "u4=map" --> choose rahul
 
 
+resource "aws_iam_user" "reference2" {
+  name = var.number_var
+  tags = {
+    tag-key = "new-user2"
+  }
+}
