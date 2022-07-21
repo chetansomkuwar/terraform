@@ -28,7 +28,7 @@
 #   description = "variables details through list"
 # }
 
-#### variable for list ##### --> call listing
+#### variable for  ##### --> call listing
 # variable "list_var" {
 #   type    = list(any)
 #   default = ["shubham", "pranay", "atharv", "akash"]
