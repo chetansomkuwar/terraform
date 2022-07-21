@@ -58,7 +58,7 @@
 # }
 
 
-#### variable for boolian #####
+#### variable for boolian ##### --> value
 variable "boolian_var" {
   type        = boolian
   default     = "2"
