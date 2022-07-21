@@ -52,3 +52,13 @@ resource "aws_iam_user" "reference6" {
     tag-key = "new-user2"
   }
 }
+
+
+
+
+resource "aws_iam_user" "reference6" {
+  name = var.boolian_var
+  tags = {
+    tag-key = "new-user2"
+  }
+}
