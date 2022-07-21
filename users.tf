@@ -1,3 +1,1 @@
-resource "" "name" {
-  
-}
+resource 
