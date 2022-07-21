@@ -10,7 +10,8 @@ resource "aws_iam_user" "reference1" {
 
 resource "aws_iam_user" "reference2" {
   name = var.number_var
+  count = 2
   tags = {
-    tag-key = "new-user1"
+    tag-key = "new-user2"
   }
 }
