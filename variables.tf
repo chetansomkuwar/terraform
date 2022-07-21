@@ -45,7 +45,7 @@
 variable "any_var" {
   type        = any
   default     = {
-    
+    u1
   }
   description = "variables details through number"
 }
