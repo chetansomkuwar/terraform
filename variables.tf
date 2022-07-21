@@ -6,7 +6,7 @@
 # }
 
 
-#### varibale for strings
+#### varibale for strings #####
 variable "string_var" {
   type        = string
   default     = "sandesh"
@@ -14,3 +14,8 @@ variable "string_var" {
 }
 
 #### variable for number #####
+variable "string_var" {
+  type        = string
+  default     = "sandesh"
+  description = "variables details"
+}
