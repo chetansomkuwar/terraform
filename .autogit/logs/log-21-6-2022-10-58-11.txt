@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+Thu Jul 21 2022 10:58:11 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* users.tf
+
+
+Created files:
+* .autogit/logs/log-21-6-2022-10-57-42.txt
+
+
+Deleted files:
+
+
+Renamed files:
