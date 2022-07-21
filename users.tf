@@ -32,7 +32,7 @@
 #   tags = {
 #     tag-key = "new-user3"
 #   }
-}
+# }
 
 #Note:- in map resource u2,u3,u1 call variable map
 
