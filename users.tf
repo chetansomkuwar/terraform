@@ -15,7 +15,7 @@
 #   }
 # }
 
-
+#Note:- 
 
 # resource "aws_iam_user" "reference3" {
 #   name = var.list_var[3]
