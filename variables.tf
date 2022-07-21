@@ -46,7 +46,7 @@ variable "any_var" {
   type        = any
   default     = {
     u1 = "sando"
-    
+    u2 = []
   }
   description = "variables details through number"
 }
