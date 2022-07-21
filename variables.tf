@@ -29,14 +29,14 @@
 # }
 
 ### variable for map  ##### 
-variable "map_var" {
-  type        = map(any)
-  description = "variables details through map"
-  default = {
+# variable "map_var" {
+#   type        = map(any)
+#   description = "variables details through map"
+#   default = {
 
-    u1 = "user1"
-    u2 = "user2"
-    u3 = "user3"
-  }
+#     u1 = "user1"
+#     u2 = "user2"
+#     u3 = "user3"
+#   }
 
 }

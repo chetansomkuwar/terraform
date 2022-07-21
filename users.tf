@@ -26,12 +26,12 @@
 
 #Note:- this resource calling --> list variable --> thier provided list of username
 
-resource "aws_iam_user" "reference4" {
-  name = var.map_var.u2
-  # here u2 mention after the name & u2= find variable in variabl files.
-  tags = {
-    tag-key = "new-user3"
-  }
+# resource "aws_iam_user" "reference4" {
+#   name = var.map_var.u2
+#   # here u2 mention after the name & u2= find variable in variabl files.
+#   tags = {
+#     tag-key = "new-user3"
+#   }
 }
 
 #Note:- in map resource u2,u3,u1 call variable map
