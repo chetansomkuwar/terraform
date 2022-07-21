@@ -41,9 +41,9 @@
 
 # }
 
-#### variable for number #####
-# variable "number_var" {
-#   type        = number
-#   default     = "2"
-#   description = "variables details through number"
-# }
+#### variable for any #####
+variable "any_var" {
+  type        = any
+  default     = "2"
+  description = "variables details through number"
+}
