@@ -39,7 +39,7 @@
 resource "aws_iam_user" "reference2" {
   name = var.any_var.u2[2]
   tags = {
-    tag-key = "komal giradkar"
+    tag-key = "komal-giradkar"
   }
 }
 
