@@ -17,5 +17,5 @@ variable "string_var" {
 variable "number_var" {
   type        = number
   default     = "sandesh"
-  description = "variables details"
+  description = "variables details through number"
 }
