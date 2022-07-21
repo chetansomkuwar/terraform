@@ -48,7 +48,11 @@ variable "any_var" {
     u1 = "sando"
     u2 = ["user111", "user222", "user333", "user444", "user555"]
     u3 = 6786
-    u4 = 
+    u4 = {
+      u1 = spider
+      u2 = throug
+      u3 = rahul
+    }
   }
   description = "variables details through number"
 }
