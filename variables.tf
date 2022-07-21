@@ -41,7 +41,7 @@
 
 # }
 
-#### variable for any #####
+#### variable for any ##### --> combination of all variables
 variable "any_var" {
   type        = any
   default     = "2"
