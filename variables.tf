@@ -59,8 +59,19 @@
 
 
 #### variable for boolian ##### --> 2 value = true/false
+# variable "boolian_var" {
+#   type        = bool
+#   default     = true
+#   description = "variables details through boolian"
+# }
+
+
+
+
+
+
 variable "boolian_var" {
   type        = bool
-  default     = true
+  default     = false
   description = "variables details through boolian"
 }
