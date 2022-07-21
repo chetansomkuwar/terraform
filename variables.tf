@@ -12,3 +12,5 @@ variable "string_var" {
   default     = "sandesh"
   description = "variables details"
 }
+
+#### variable for 

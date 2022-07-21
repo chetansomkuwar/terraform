@@ -6,7 +6,4 @@ resource "aws_iam_user" "reference1" {
   }
 }
 
-#Note:- this user calling name --> variable string --> string variable provide "sandesh"
-
-############ varibale examples files ###############
-    
+#Note:- this user calling name --> variable string --> string variable provide "sandesh"    
