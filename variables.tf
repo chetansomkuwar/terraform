@@ -6,4 +6,4 @@
 # }
 
 
-# string
+# string variable
