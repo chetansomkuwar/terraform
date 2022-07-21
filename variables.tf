@@ -67,8 +67,8 @@
 
 ##############################################################3
 
-variable "boolian_var" {
-  type        = bool
-  default     = false
-  description = "variables details through boolian"
-}
+# variable "boolian_var" {
+#   type        = bool
+#   default     = false
+#   description = "variables details through boolian"
+# }

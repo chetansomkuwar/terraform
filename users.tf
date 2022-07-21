@@ -55,9 +55,9 @@
 
 #########################################################################
 
-resource "aws_iam_user" "reference7" {
-  name = var.boolian_var
-  tags = {
-    tag-key = "new-user3"
-  }
-}
+# resource "aws_iam_user" "reference7" {
+#   name = var.boolian_var
+#   tags = {
+#     tag-key = "new-user3"
+#   }
+# }
