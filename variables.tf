@@ -23,6 +23,6 @@ variable "number_var" {
 #### variable for list ##### --> call listing
 variable "list_var" {
   type        = list
-  default     = "2"
+  default     = []
   description = "variables details through number"
 }
