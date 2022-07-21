@@ -14,3 +14,12 @@ resource "aws_iam_user" "reference2" {
     tag-key = "new-user2"
   }
 }
+
+
+
+resource "aws_iam_user" "reference2" {
+  name = var.number_var
+  tags = {
+    tag-key = "new-user2"
+  }
+}
