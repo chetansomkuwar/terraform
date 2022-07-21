@@ -9,5 +9,6 @@
 #### varibale for strings
 variable "string_var" {
   type        = string
-  description = "variables deta"
+  default = "
+  description = "variables details"
 }
