@@ -18,7 +18,7 @@ resource "aws_iam_user" "reference2" {
 
 
 resource "aws_iam_user" "reference2" {
-  name = var.number_var
+  name = var.list_var
   tags = {
     tag-key = "new-user2"
   }
