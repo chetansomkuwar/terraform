@@ -14,6 +14,6 @@ variable "public_subnet" {
 }
 
 variable "availability_zone" {
-  description = "calling public subnet via variable"
+  description = "availability_zone via variable"
   type        = list(string)
 }
