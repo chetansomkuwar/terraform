@@ -8,7 +8,9 @@ resource "aws_vpc" "main" {
   instance_tenancy = "default"
   tags = var.tag
 
-  
+   tags = {
+    Name = "Main"
+  }
 }
 
 resource "aws_subnet" "public_subnet" {
