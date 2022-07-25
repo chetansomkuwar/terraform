@@ -8,7 +8,7 @@ variable "tag" {
   type        = map(string)
 }
 
-variable "tag" {
+variable "public_subnet" {
   description = "vpc tag via variable"
   type        = map(string)
 }
