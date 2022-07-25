@@ -4,6 +4,6 @@ variable "vpc_cidr_block" {
 }
 
 variable "tag" {
-  description = "jarvis_desk"
+  description = "vpc tag via variable"
   type        = string
 }
