@@ -11,3 +11,4 @@ resource "aws_vpc" "main" {
     Name = "var.tag"
   }
 }
+
