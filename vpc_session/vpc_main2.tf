@@ -10,7 +10,7 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_subnet" "public_subnet" {
-  count = 
+  count = lengh
   vpc_id     = aws_vpc.main.id
   cidr_block = var.public_subnet[count.index]
   tags 
