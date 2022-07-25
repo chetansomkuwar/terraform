@@ -6,10 +6,8 @@ provider "aws" {
 resource "aws_vpc" "main" {
   cidr_block       = var.vpc_cidr_block
   instance_tenancy = "default"
-  tags
-  tags = {
-    Name = "var.tag"
-  }
+  tags = "var.tag"
+
 }
 
 resource "aws_subnet" "public_subnet" {
