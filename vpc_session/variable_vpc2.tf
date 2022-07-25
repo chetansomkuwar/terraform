@@ -13,7 +13,7 @@ variable "public_subnet" {
   type        = list(string)
 }
 
-variable "public_subnet" {
+variable "availability_zone" {
   description = "calling public subnet via variable"
   type        = list(string)
 }
