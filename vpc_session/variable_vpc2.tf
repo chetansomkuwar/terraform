@@ -10,5 +10,5 @@ variable "tag" {
 
 variable "public_subnet" {
   description = "calling public subnet via variable"
-  type        = map(string)
+  type        = list(string)
 }
