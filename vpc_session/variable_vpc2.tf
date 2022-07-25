@@ -1,4 +1,4 @@
 variable "vpc_cidr_block" {
-    description = "value"
+    description = "cidr of vpc"
   
 }
