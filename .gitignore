@@ -3,6 +3,9 @@
 
 # To hide sensitive data
 terraform.tfstate 
+.autogit
+logs
+
 
 # .tfstate files
 *.tfstate
