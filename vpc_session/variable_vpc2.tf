@@ -5,5 +5,5 @@ variable "vpc_cidr_block" {
 
 variable "tag" {
   description = "vpc tag via variable"
-  type        = map(string
+  type        = map(string)
 }
