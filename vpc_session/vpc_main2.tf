@@ -8,6 +8,6 @@ resource "aws_vpc" "main" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "jarvis_vpc"
+    Name = "var.tag"
   }
 }
