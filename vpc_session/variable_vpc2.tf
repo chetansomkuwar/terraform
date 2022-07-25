@@ -1,16 +1,21 @@
-variable "vpc_cidr_block" {
-  description = "cidr of vpc"
-  type        = string
+variable "vpc_cidr" {
+   type     = string
 }
 variable "tag" {
-  description = "vpc tag via variable"
-  type        = map(string)
+   type     = map(string)
 }
-variable "public_subnet" {
-  description = "calling public subnet via variable"
-  type        = list(string)
+variable "public_vpc_cidr" {
+   type     = list(string)
+}
+variable "private_vpc_cidr" {
+   type     = list(string)
 }
 variable "availability_zone" {
-  description = "availability_zone via variable"
-  type        = list(string)
+   type     = list(string)
+}
+variable "env" {
+   type     = string
+}
+variable "owner" {
+   type     = string
 }
