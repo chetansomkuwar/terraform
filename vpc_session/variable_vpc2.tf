@@ -3,7 +3,7 @@ variable "vpc_cidr_block" {
   type        = string
 }
 
-variable "vpc_cidr_block" {
-  description = "cidr of vpc"
+variable "tag" {
+  description = "jarvis_desk"
   type        = string
 }
