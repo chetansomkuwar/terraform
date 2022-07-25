@@ -1,9 +1,7 @@
 variable "vpc_cidr_block" {
   description = "cidr of vpc"
   type        = string
-}
-
-ariable "tag" {
+}variable "tag" {
   description = "vpc tag via variable"
   type        = map(string)
 }
