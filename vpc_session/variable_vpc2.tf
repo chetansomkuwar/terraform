@@ -7,3 +7,8 @@ variable "tag" {
   description = "vpc tag via variable"
   type        = map(string)
 }
+
+variable "tag" {
+  description = "vpc tag via variable"
+  type        = map(string)
+}
