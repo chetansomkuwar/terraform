@@ -9,7 +9,7 @@ resource "aws_vpc" "main" {
   tags = var.tag
 
    tags = {
-    Name = "Main"
+    Name = "my_first_vpc"
   }
 }
 
