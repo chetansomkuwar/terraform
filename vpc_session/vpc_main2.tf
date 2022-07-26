@@ -79,7 +79,7 @@ resource "aws_route_table_association" "public_subnet_associate" {
 # create NAT Gateway
 resource "aws_nat_gateway" "nat_gwa" {
   allocation_id = aws_subnet.public.id 
-  subnet_id     = aws_subnet.example.id
+  subnet_id     = aws_subnet.public.id
 
   tags = {
     Name = "nat_gwa"
