@@ -91,7 +91,8 @@ resource "aws_nat_gateway" "nat_gwa" {
 }
 
 #create elastic IP
+# we need elastic IP 
 resource "aws_eip" "elastic_ip" {
-  instance = aws_instance.web.id
+#  instance = aws_instance.web.id 
   vpc      = true
 }
