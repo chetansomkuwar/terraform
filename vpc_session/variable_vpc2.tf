@@ -1,21 +1,21 @@
 variable "vpc_cidr" {
-   type     = string
+  type = string
 }
 variable "tag" {
-   type     = map(string)
+  type = map(string)
 }
 variable "public_vpc_cidr" {
-   type     = list(string)
+  type = list(string)
 }
 variable "private_vpc_cidr" {
-   type     = list(string)
+  type = list(string)
 }
 variable "availability_zone" {
-   type     = list(string)
+  type = list(string)
 }
 variable "env" {
-   type     = string
+  type = string
 }
 variable "owner" {
-   type     = string
+  type = string
 }
