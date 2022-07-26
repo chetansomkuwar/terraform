@@ -66,4 +66,5 @@ resource "aws_route" "pvt_route_table" {
   route_table_id            = aws_route_table.private_rt.id
   destination_cidr_block    = "0.0.0.0/0"
   depends_on                = [aws_route_table.private_rt]
+  gateway_id = 
 }
