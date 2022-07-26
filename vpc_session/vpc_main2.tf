@@ -32,7 +32,7 @@ resource "aws_subnet" "private" {
 resource "aws_vpc_gateway" "vpn_gw" {
   vpc_id = aws_vpc.this.id
 
-  tags = {
-    Name = "main"
-  }
+  # tags = {
+  #   Name = "main"
+  # }
 }
