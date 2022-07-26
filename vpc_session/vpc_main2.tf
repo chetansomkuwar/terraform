@@ -40,7 +40,7 @@ resource "aws_internet_gateway" "igw" {
 
 
 #create route table --> attach to vpc --> do igw entry in rt
-resource "aws_route_table" "public" {
+resource "aws_route_table" "public_rt" {
   vpc_id = aws_vpc.this.id
     route {
     cidr_block = "0.0.0.0/0"
@@ -52,7 +52,7 @@ resource "aws_route_table" "public" {
 }
 
 # create private route table 
-resource "aws_route_table" "public" {
+resource "aws_route_table" "private" {
   vpc_id = aws_vpc.this.id
     route {
     cidr_block = "0.0.0.0/0"
