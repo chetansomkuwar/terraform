@@ -71,6 +71,6 @@ resource "aws_route" "pvt_route_table" {
 
 # do subnet association
 resource "aws_route_table_association" "public_subnet_associate" {
-  subnet_id      = aws_subnet.public.id   # here we mention CIDR Block for counting no for subnets
+  subnet_id      = aws_subnet.public[coun].id   # here we mention CIDR Block for counting no for subnets
   route_table_id = aws_route_table.public_rt.id
 }
