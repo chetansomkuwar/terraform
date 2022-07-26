@@ -67,7 +67,6 @@ resource "aws_route" "pvt_route_table" {
   destination_cidr_block    = "0.0.0.0/0"
   depends_on                = [aws_route_table.private_rt]
   nat_gateway_id = aws_nat_gateway.nat_gwa.id
-
 }
 
 # do subnet association
