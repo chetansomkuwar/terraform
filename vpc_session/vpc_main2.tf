@@ -37,8 +37,8 @@ resource "aws_vpc_gateway" "vpn_gw" {
   # }
 }
 
-resource "aws_route_table" "example" {
-  vpc_id = aws_vpc.example.id
+resource "aws_route_table" "this" {
+  vpc_id = aws_vpc.this.id
 
   route {
     cidr_block = "10.0.1.0/24"
