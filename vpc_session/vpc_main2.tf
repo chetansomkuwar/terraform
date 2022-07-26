@@ -51,4 +51,4 @@ resource "aws_route_table" "public" {
   }
 }
 
-#
+# create privateroute table and add
