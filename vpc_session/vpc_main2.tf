@@ -97,3 +97,8 @@ resource "aws_eip" "elastic_ip" {
 #  instance = aws_instance.web.id --> # here we don't need elastic ip bcoz here we create vpc only
   vpc      = true
 }
+
+resource "aws_vpn_gateway_route_propagation" "example" {
+  vpn_gateway_id = aws_vpn_gateway.example.id
+  route_table_id = aws_route_table.example.id
+}
