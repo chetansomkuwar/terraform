@@ -39,7 +39,7 @@ resource "aws_vpc_gateway" "igw" {
 }
 
 
-#create
+#create route table
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.this.id
     route {
