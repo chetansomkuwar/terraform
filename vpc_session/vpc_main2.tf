@@ -28,3 +28,11 @@ resource "aws_subnet" "private" {
   availability_zone = element(var.availability_zone, count.index)
   tags              = { "environment" = var.env }
 }
+
+resource "aws_vpn_gateway" "vpn_gw" {
+  vpc_id = aws_vpc.main.id
+
+  tags = {
+    Name = "main"
+  }
+}
