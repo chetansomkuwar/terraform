@@ -82,7 +82,7 @@ resource "aws_nat_gateway" "nat_gwa" {
   subnet_id     = aws_subnet.example.id
 
   tags = {
-    Name = "gw NAT"
+    Name = "nat_gwa"
   }
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
