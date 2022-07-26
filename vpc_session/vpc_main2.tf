@@ -61,7 +61,7 @@ resource "aws_route_table" "private_rt" {
 }
 
 
-#add route entry in private from outside using another resource
+#add route entry in private_rt from outside using another resource
 resource "aws_route" "r" {
   route_table_id            = "rtb-4fbb3ac4"
   destination_cidr_block    = "10.0.1.0/22"
