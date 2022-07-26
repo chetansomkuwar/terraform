@@ -37,7 +37,7 @@ resource "aws_vpc_gateway" "vpn_gw" {
   # }
 }
 
-resource "aws_route_table" "this" {
+resource "aws_route_table" "public" {
   vpc_id = aws_vpc.this.id
 
   route {
