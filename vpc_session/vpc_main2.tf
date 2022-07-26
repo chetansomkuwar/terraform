@@ -75,3 +75,17 @@ resource "aws_route_table_association" "public_subnet_associate" {
   subnet_id      = aws_subnet.public[count.index].id   # here we mention CIDR Block for counting no for subnets
   route_table_id = aws_route_table.public_rt.id
 }
+
+# create NAT Gateway
+resource "aws_nat_gateway" "example" {
+  allocation_id = aws_eip.example.id
+  subnet_id     = aws_subnet.example.id
+
+  tags = {
+    Name = "gw NAT"
+  }
+
+  # To ensure proper ordering, it is recommended to add an explicit dependency
+  # on the Internet Gateway for the VPC.
+  depends_on = [aws_internet_gateway.example]
+}
