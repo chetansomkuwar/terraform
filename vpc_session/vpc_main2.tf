@@ -72,5 +72,5 @@ resource "aws_route" "pvt_route_table" {
 # do subnet association
 resource "aws_route_table_association" "public_subnet_associate" {
   subnet_id      = aws_subnet.public.id
-  route_table_id = aws_route_table.bar.id
+  route_table_id = aws_route_table.public_rt.id
 }
