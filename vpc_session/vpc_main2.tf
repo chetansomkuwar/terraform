@@ -91,7 +91,7 @@ resource "aws_nat_gateway" "nat_gwa" {
 }
 
 #create elastic IP
-resource "aws_eip" "lb" {
+resource "aws_eip" "elastic" {
   instance = aws_instance.web.id
   vpc      = true
 }
