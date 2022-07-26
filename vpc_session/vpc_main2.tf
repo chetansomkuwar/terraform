@@ -29,7 +29,7 @@ resource "aws_subnet" "private" {
   tags              = { "environment" = var.env }
 }
 
-resource "aws_vpc_gateway" "vpn_gw" {
+resource "aws_vpc_gateway" "igw" {
   vpc_id = aws_vpc.this.id
 
   # tags = {
