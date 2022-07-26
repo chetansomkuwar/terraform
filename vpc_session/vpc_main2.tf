@@ -68,3 +68,4 @@ resource "aws_route" "pvt_route_table" {
   depends_on                = [aws_route_table.private_rt]
   gateway_id = aws_internet_gateway.igw.id
 }
+
