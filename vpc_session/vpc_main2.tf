@@ -33,9 +33,9 @@ resource "aws_subnet" "private" {
 resource "aws_vpc_gateway" "igw" {
   vpc_id = aws_vpc.this.id
 
-  # tags = {
-  #   Name = "main"
-  # }
+  tags = {
+    Name = "igw"
+  }
 }
 
 
@@ -46,7 +46,7 @@ resource "aws_route_table" "public" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
   }
-  # tags = {
-  #   Name = "example"
-  # }
+  tags = {
+    Name = "public"
+  }
 }
