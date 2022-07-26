@@ -44,7 +44,6 @@ resource "aws_route_table" "this" {
     cidr_block = "10.0.1.0/24"
     gateway_id = aws_internet_gateway.example.id
   }
-
   tags = {
     Name = "example"
   }
