@@ -78,7 +78,7 @@ resource "aws_route_table_association" "public_subnet_associate" {
 
 # create NAT Gateway
 resource "aws_nat_gateway" "nat_gwa" {
-  allocation_id = aws_eip.example.id 
+  allocation_id = aws_eip.elastic_ip.id 
   subnet_id     = aws_subnet.public[2].id #[2] on second subnet will associate with NAT Gateway
 
   tags = {
