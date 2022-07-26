@@ -63,7 +63,7 @@ resource "aws_route_table" "private_rt" {
 
 #add route entry in private_rt from outside using another resource
 resource "aws_route" "this" {
-  route_table_id            = "aws_route_table.private_rt"
+  route_table_id            = "aws_route_table.private_rt.id"
   destination_cidr_block    = "10.0.1.0/22"
   vpc_peering_connection_id = "pcx-45ff3dc1"
   depends_on                = [aws_route_table.testing]
