@@ -4,7 +4,8 @@ data "aws_availability_zones" "available" {}
 
 # defime AMI
 resource "aws_ami" "ubuntu" {
-  most_recent
+  most_recent = true
+  owners `
   name                = "terraform-example"
   virtualization_type = "hvm"
   root_device_name    = "/dev/xvda"
