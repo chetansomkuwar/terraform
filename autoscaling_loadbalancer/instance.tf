@@ -1,5 +1,5 @@
 resource "aws_instance" "web-server" {
-  ami           = "ami-0f7559f51d3a22167"
+  ami           = "ami-052efd3df9dad4825"
   instance_type =  "t2.micro"
   count         =  2
   key_name = "paris-key"
