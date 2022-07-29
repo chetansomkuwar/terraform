@@ -22,7 +22,7 @@ module "alb" {
 
   vpc_id             = "vpc-0a807348fb2cec222"
   subnets            = ["subnet-04c97d3e3d58741fe", "subnet-0129688326e642a66"]
-  security_groups    = ["sg-0ee859fd6cfcacc26", "sg-edcd9785"]
+  security_groups    = ["sg-0ee859fd6cfcacc26", "sg-014cbb5be97e19501"]
 
   access_logs = {
     bucket = "my-alb-logs"
