@@ -2,7 +2,7 @@ resource "aws_lb_target_group" "test" {
   name     = "tf-example-lb-tg"
   port     = 80
   protocol = "HTTP"
-  vpc_id   = "vpc-000bd6ceea0bbd16c"
+  vpc_id   = "vpc-0d38f6e75bce4c3e6"
 }
 
 
