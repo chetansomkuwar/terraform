@@ -1,3 +1,9 @@
+provider "aws" {
+  # Configuration options
+  region  = "us-east-1"
+  profile = "jarvis"
+}
+
 resource "aws_instance" "web-server" {
   ami             = "ami-052efd3df9dad4825"
   instance_type   = "t2.micro"
