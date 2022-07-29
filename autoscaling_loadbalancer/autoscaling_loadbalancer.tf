@@ -21,7 +21,7 @@ module "alb" {
   load_balancer_type = "application"
 
   vpc_id             = "vpc-0a807348fb2cec222"
-  subnets            = ["subnet-abcde012", "subnet-bcde012a"]
+  subnets            = ["subnet-04c97d3e3d58741fe", "subnet-bcde012a"]
   security_groups    = ["sg-edcd9784", "sg-edcd9785"]
 
   access_logs = {
