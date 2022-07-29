@@ -11,7 +11,7 @@ resource "aws_lb" "instance_lb" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.my_sg.id]
-  subnets            = [ "subnet-072b5d54ff135b446" , "subnet-0ef8f91620e7e2687" ]
+  subnets            = [ "subnet-072b5d54ff135b446" , "subnet-0806e037bdfb4a34a" ]
 }
 
 resource "aws_lb_listener" "front_end" {
