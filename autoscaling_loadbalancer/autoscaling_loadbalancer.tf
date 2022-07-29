@@ -8,6 +8,7 @@ resource "aws_ami" "ubuntu" {
   owners = ["099720109477"]
   filter = "{
     name = "name"
+    values = "
   }
   name                = "terraform-example"
   virtualization_type = "hvm"
