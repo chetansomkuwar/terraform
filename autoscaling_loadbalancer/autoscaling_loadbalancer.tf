@@ -10,6 +10,7 @@ resource "aws_ami" "ubuntu" {
     name = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
   }
+  
   name                = "terraform-example"
   virtualization_type = "hvm"
   root_device_name    = "/dev/xvda"
