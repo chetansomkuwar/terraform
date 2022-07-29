@@ -6,6 +6,7 @@ data "aws_availability_zones" "available" {}
 resource "aws_ami" "ubuntu" {
   most_recent = true
   owners = ["099720109477"]
+  filter = "
   name                = "terraform-example"
   virtualization_type = "hvm"
   root_device_name    = "/dev/xvda"
