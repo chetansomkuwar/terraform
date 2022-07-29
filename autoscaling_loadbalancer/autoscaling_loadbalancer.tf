@@ -1,4 +1,8 @@
-v
+provider "aws" {
+  # Configuration options
+  region  = "us-east-1"
+  profile = "jarvis"
+}
 
 # # Declare the data source
 # data "aws_availability_zones" "available" {}
