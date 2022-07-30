@@ -46,12 +46,12 @@ resource "aws_instance" "web-server" {
   key_name        = "jarvis_privatekey"
   security_groups = ["${aws_security_group.my_sg.name}"]
   user_data       = <<EOF
-#! /bin/bash
+#!/bin/bash
 sudo apt-get update
 sudo apt-get install apache2 -y
 sudo systemctl reload apache2
-sudo rm -rf /var/www/html/index.html
-sudo echo "hello everyone, this is tab page $HOSTNAME" >> /var/www/html/index.html
+sudo mkdir -p /var/www/html/tab/
+sudo echo "hello world, welcome to my tab page $HOSTNAME" >> /var/www/html/tab/index.html 
 EOF
 }
 
