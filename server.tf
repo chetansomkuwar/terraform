@@ -12,12 +12,13 @@ resource "aws_instance" "web-server" {
   key_name        = "jarvis_privatekey"
   security_groups = ["${aws_security_group.my_sg.name}"]
   user_data       = <<EOF
-#!/bin/bash
+#! /bin/bash
 sudo apt-get update
 sudo apt-get install apache2 -y
 sudo systemctl reload apache2
-rm -rfv /var/www/html/index.html
-sudo echo "hello everyone, this is my laptop page $HOSTNAME" >> /var/www/html/index.htmlEOF
+sudo rm -rf /var/www/html/index.html
+sudo echo "hello everyone, this is laptop page $HOSTNAME" >> /var/www/html/index.html
+EOF
 }
 
 resource "aws_instance" "web-server" {
