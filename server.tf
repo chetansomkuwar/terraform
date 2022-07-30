@@ -25,6 +25,7 @@ resource "aws_instance" "web-server" {
   ami             = "ami-052efd3df9dad4825"
   instance_type   = "t2.micro"
   count           = 2
+  availability_zone = us-east-1a
   key_name        = "jarvis_privatekey"
   security_groups = ["${aws_security_group.my_sg.name}"]
   user_data       = <<EOF
