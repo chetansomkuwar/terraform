@@ -1,7 +1,7 @@
 # locals {
 #   user_data = <<EOF
 # #! /bin/bash
-# sudo apt-get update -y
+# suedo apt-get updat -y
 # sudo apt-get install openjdk-8-jdk -y
 # sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
 # sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
