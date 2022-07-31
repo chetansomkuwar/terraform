@@ -1,113 +1,113 @@
-# # RSA key of size 4096 bits
-# resource "tls_private_key" "demo_key" {
-#   algorithm = "RSA"
-#   rsa_bits  = 4096
+# # # RSA key of size 4096 bits
+# # resource "tls_private_key" "demo_key" {
+# #   algorithm = "RSA"
+# #   rsa_bits  = 4096
+# # }
+
+# # resource "aws_key_pair" "this" {
+# #   key_name   = "northvergenia_public_key"
+# #   public_key = tls_private_key.demo_key.public_key_openssh
+# # }
+
+# ##############################################################################
+# # # elastic ip to ec2 instance
+# # resource "aws_eip" "lb" {
+# #   instance = aws_instance.web.id
+# #   vpc      = true
+# # }
+# #(not works in count variable)
+# ##############################################################################
+# # create efs and attach to ec2 instance in encrypted mode
+# resource "aws_efs_file_system" "this" {
+#   creation_token = "${var.tag}_prod"
+#   encrypted      = true
+
+#   tags = {
+#     Name = "${var.tag}_prod"
+#   }
 # }
 
-# resource "aws_key_pair" "this" {
-#   key_name   = "northvergenia_public_key"
-#   public_key = tls_private_key.demo_key.public_key_openssh
+# resource "aws_efs_mount_target" "this" {
+#   file_system_id  = aws_efs_file_system.this.id
+#   subnet_id       = "subnet-0806e037bdfb4a34a"
+#   security_groups = [aws_security_group.tf_sg_02.id]
 # }
 
-##############################################################################
-# # elastic ip to ec2 instance
-# resource "aws_eip" "lb" {
-#   instance = aws_instance.web.id
-#   vpc      = true
+# resource "aws_efs_access_point" "this" {
+#   file_system_id = aws_efs_file_system.this.id
 # }
-#(not works in count variable)
-##############################################################################
-# create efs and attach to ec2 instance in encrypted mode
-resource "aws_efs_file_system" "this" {
-  creation_token = "${var.tag}_prod"
-  encrypted      = true
 
-  tags = {
-    Name = "${var.tag}_prod"
-  }
-}
+# ##############################################################################
 
-resource "aws_efs_mount_target" "this" {
-  file_system_id  = aws_efs_file_system.this.id
-  subnet_id       = "subnet-0806e037bdfb4a34a"
-  security_groups = [aws_security_group.tf_sg_02.id]
-}
+# #Create Security Group
+# resource "aws_security_group" "tf_sg_02" {
+#   name        = "tf_sg_1" #[Security Group Name]
+#   description = "Allow TLS inbound traffic"
+#   vpc_id      = var.vpc_id
+#   #need vpc id because security group is bounded with vpc
 
-resource "aws_efs_access_point" "this" {
-  file_system_id = aws_efs_file_system.this.id
-}
+#   ingress {
+#     description = "TLS from VPC"
+#     from_port   = 22
+#     to_port     = 22
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
+#     #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
+#   }
 
-##############################################################################
+#   ingress {
+#     description = "TLS from VPC"
+#     from_port   = 443
+#     to_port     = 443
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
+#     #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
+#   }
+#   ingress {
+#     description = "TLS from VPC"
+#     from_port   = 2049
+#     to_port     = 2049
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
+#     #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
+#   }
+#   ingress {
+#     description = "TLS from VPC"
+#     from_port   = 8080
+#     to_port     = 8080
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
+#     #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
+#   }
 
-#Create Security Group
-resource "aws_security_group" "tf_sg_02" {
-  name        = "tf_sg_1" #[Security Group Name]
-  description = "Allow TLS inbound traffic"
-  vpc_id      = var.vpc_id
-  #need vpc id because security group is bounded with vpc
+#   egress {
+#     from_port   = 0
+#     to_port     = 0
+#     protocol    = "-1"
+#     cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
+#     #    ipv6_cidr_blocks = ["::/0"]
+#   }
+#   tags = {
+#     Name = "${var.tag}_security_group"
+#   }
+# }
 
-  ingress {
-    description = "TLS from VPC"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
-    #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
-  }
+# # filter the AMI Image by owner id & AMI Image Location
+# data "aws_ami" "ubuntu" {
+#   most_recent = true
 
-  ingress {
-    description = "TLS from VPC"
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
-    #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
-  }
-  ingress {
-    description = "TLS from VPC"
-    from_port   = 2049
-    to_port     = 2049
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
-    #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
-  }
-  ingress {
-    description = "TLS from VPC"
-    from_port   = 8080
-    to_port     = 8080
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
-    #    ipv6_cidr_blocks = [aws_vpc.main.ipv6_cidr_block]
-  }
+#   filter {
+#     name   = "name"
+#     values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+#   }
 
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"] # allow traffic from all IP Address
-    #    ipv6_cidr_blocks = ["::/0"]
-  }
-  tags = {
-    Name = "${var.tag}_security_group"
-  }
-}
+#   filter {
+#     name   = "virtualization-type"
+#     values = ["hvm"]
+#   }
 
-# filter the AMI Image by owner id & AMI Image Location
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  owners = ["099720109477"] # Canonical
-}
+#   owners = ["099720109477"] # Canonical
+# }
 
 #######################################################################################
 
