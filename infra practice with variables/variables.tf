@@ -112,7 +112,6 @@
 # # variable "key_name" {
 # #   description = "keyname for server"
 # #   type        = string
-
 # # }
 
 # # #this for default security group
