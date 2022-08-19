@@ -90,10 +90,10 @@ variable "availability_zone" {
   type        = string
 }
 
-# variable "instance_count" {
-#   description = "EC2 instance count mention here"
-#   type        = number
-# }
+variable "instance_count" {
+  description = "EC2 instance count mention here"
+  type        = number
+}
 
 variable "enable_public_ip" {
   description = "Mention Enable public IP address to be decide here "
