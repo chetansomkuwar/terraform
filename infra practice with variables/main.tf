@@ -111,26 +111,26 @@
 
 #######################################################################################
 
-# now, create ec2 instance
-resource "aws_instance" "web" {
-  ami                         = data.aws_ami.ubuntu.id
-  instance_type               = var.instance_type
-  availability_zone           = var.availability_zone
-  count                       = var.instance_count
-  associate_public_ip_address = var.enable_public_ip
-  #  tags = var.project_environment
-  #  key_name = var.key_name
-  key_name = aws_key_pair.this.key_name
-  #  security_groups = var.security_group
-  vpc_security_group_ids = [aws_security_group.tf_sg_02.id]
-  user_data              = local.user_data
-  tags = {
-    Name = "${var.tag}_prod"
-  }
-}
+# # now, create ec2 instance
+# resource "aws_instance" "web" {
+#   ami                         = data.aws_ami.ubuntu.id
+#   instance_type               = var.instance_type
+#   availability_zone           = var.availability_zone
+#   count                       = var.instance_count
+#   associate_public_ip_address = var.enable_public_ip
+#   #  tags = var.project_environment
+#   #  key_name = var.key_name
+#   key_name = aws_key_pair.this.key_name
+#   #  security_groups = var.security_group
+#   vpc_security_group_ids = [aws_security_group.tf_sg_02.id]
+#   user_data              = local.user_data
+#   tags = {
+#     Name = "${var.tag}_prod"
+#   }
+# }
 
-output "aws_instance" {
-  value = aws_instance.web
-}
+# output "aws_instance" {
+#   value = aws_instance.web
+# }
 
 
