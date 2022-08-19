@@ -113,9 +113,9 @@
 
 # now, create ec2 instance
 resource "aws_instance" "web" {
-  ami               = data.aws_ami.ubuntu.id
-  instance_type     = var.instance_type
-  availability_zone = var.availability_zone
+  ami                         = data.aws_ami.ubuntu.id
+  instance_type               = var.instance_type
+  availability_zone           = var.availability_zone
   count                       = var.instance_count
   associate_public_ip_address = var.enable_public_ip
   #  tags = var.project_environment
