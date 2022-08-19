@@ -73,62 +73,62 @@
 # }
 
 ###############################################################################################
-variable "vpc_id" {
-  description = "vpc_id of the server"
-  type        = string
-}
+# variable "vpc_id" {
+#   description = "vpc_id of the server"
+#   type        = string
+# }
 
-# #variables for ec2 instance
+# # #variables for ec2 instance
 
-variable "instance_type" {
-  description = "set instance type here"
-  type        = string
-}
+# variable "instance_type" {
+#   description = "set instance type here"
+#   type        = string
+# }
 
-variable "availability_zone" {
-  description = "set availability_zone here"
-  type        = string
-}
+# variable "availability_zone" {
+#   description = "set availability_zone here"
+#   type        = string
+# }
 
-variable "instance_count" {
-  description = "EC2 instance count mention here"
-  type        = number
-}
+# variable "instance_count" {
+#   description = "EC2 instance count mention here"
+#   type        = number
+# }
 
-variable "enable_public_ip" {
-  description = "Mention Enable public IP address to be decide here "
-  type        = bool
-}
+# variable "enable_public_ip" {
+#   description = "Mention Enable public IP address to be decide here "
+#   type        = bool
+# }
 
-# # variable "project_environment" { 
-# #   description = "project name and environment to identify working enviorment of state file"
-# #   type        = map(string)
-# #   default     = {
-# #     project     = "project-alpha",    #key
-# #     environment = "dev"               #value
-# #   }
+# # # variable "project_environment" { 
+# # #   description = "project name and environment to identify working enviorment of state file"
+# # #   type        = map(string)
+# # #   default     = {
+# # #     project     = "project-alpha",    #key
+# # #     environment = "dev"               #value
+# # #   }
+# # # }
+
+# # variable "key_name" {
+# #   description = "keyname for server"
+# #   type        = string
+
 # # }
 
-# variable "key_name" {
-#   description = "keyname for server"
-#   type        = string
+# # #this for default security group
+# # variable "security_group" {
+# #   description = "security group for server"
+# #   type        = string
+# # }
 
+# #this for customized security group
+# variable "customized_security_group1" {
+#   description = "attach created security group here"
+#   type        = list(any)
 # }
 
-# #this for default security group
-# variable "security_group" {
-#   description = "security group for server"
+# variable "tag" {
+#   description = "tags & values"
 #   type        = string
 # }
-
-#this for customized security group
-variable "customized_security_group1" {
-  description = "attach created security group here"
-  type        = list(any)
-}
-
-variable "tag" {
-  description = "tags & values"
-  type        = string
-}
-###############################################################################################
+# ###############################################################################################
