@@ -4,7 +4,7 @@ instance_type = "t2.micro"
 
 availability_zone = "us-east-1c"
 
-instance_count = 1
+instance_count = 2
 
 enable_public_ip = true
 
